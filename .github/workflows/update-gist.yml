@@ -15,7 +15,7 @@ jobs:
       - name: Update Gist
         run: |
           GIST_ID="dc3a627426281faf0bab0b7a404922e7"  # Укажи здесь ID твоего Gist
-          FILE_PATH="main.py"  # Путь к файлу в репозитории
+          FILE_PATH="/gist-sync-repo/blob/main/main.py"  # Путь к файлу в репозитории
           curl \
             -X PATCH \
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
